@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "f1c61762-edc3-4ff9-a42a-5b1c5a9a2351",
+		"name": "Web Api Homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21094920"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7000/api/customer/list?count=10&page=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7000/api/customer/list?count=10&page=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"customer",
+						"list"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:7000/api/customer/list?count=10&page=1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:7000/api/customer/list?count=10&page=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"customer",
+								"list"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 May 2022 16:30:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"BSBEV\",\n            \"companyName\": \"B's Beverages\",\n            \"contactName\": \"Victoria Ashworth\",\n            \"title\": \"Sales Representative\",\n            \"address\": \"Fauntleroy Circus, , London/UK\",\n            \"phone\": \"(171) 555-1212\",\n            \"fax\": null\n        },\n        {\n            \"id\": \"CACTU\",\n            \"companyName\": \"Cactus Comidas para llevar\",\n            \"contactName\": \"Patricio Simpson\",\n            \"title\": \"Sales Agent\",\n            \"address\": \"Cerrito 333, , Buenos Aires/ARGENTINA\",\n            \"phone\": \"(1) 135-5555\",\n            \"fax\": \"(1) 135-4892\"\n        },\n        {\n            \"id\": \"CENTC\",\n            \"companyName\": \"Centro comercial Moctezuma\",\n            \"contactName\": \"Francisco Chang\",\n            \"title\": \"Marketing Manager\",\n            \"address\": \"Sierras de Granada 9993, , México D.F./MEXICO\",\n            \"phone\": \"(5) 555-3392\",\n            \"fax\": \"(5) 555-7293\"\n        },\n        {\n            \"id\": \"CHOPS\",\n            \"companyName\": \"Chop-suey Chinese\",\n            \"contactName\": \"Yang Wang\",\n            \"title\": \"Owner\",\n            \"address\": \"Hauptstr. 29, , Bern/SWITZERLAND\",\n            \"phone\": \"0452-076545\",\n            \"fax\": null\n        },\n        {\n            \"id\": \"COMMI\",\n            \"companyName\": \"Comércio Mineiro\",\n            \"contactName\": \"Pedro Afonso\",\n            \"title\": \"Sales Associate\",\n            \"address\": \"Av. dos Lusíadas, 23, SP, Sao Paulo/BRAZIL\",\n            \"phone\": \"(11) 555-7647\",\n            \"fax\": null\n        },\n        {\n            \"id\": \"CONSH\",\n            \"companyName\": \"Consolidated Holdings\",\n            \"contactName\": \"Elizabeth Brown\",\n            \"title\": \"Sales Representative\",\n            \"address\": \"Berkeley Gardens 12  Brewery, , London/UK\",\n            \"phone\": \"(171) 555-2282\",\n            \"fax\": \"(171) 555-9199\"\n        },\n        {\n            \"id\": \"DENTI\",\n            \"companyName\": \"DENTI COLLECTION\",\n            \"contactName\": \"JOHN CAPTION\",\n            \"title\": \"DENEME\",\n            \"address\": \"87979 STREEET, LA, LOS ANGELES/USA\",\n            \"phone\": \"0748456416516\",\n            \"fax\": \"0616168160816\"\n        },\n        {\n            \"id\": \"DRACD\",\n            \"companyName\": \"Drachenblut Delikatessen\",\n            \"contactName\": \"Sven Ottlieb\",\n            \"title\": \"Order Administrator\",\n            \"address\": \"Walserweg 21, , Aachen/GERMANY\",\n            \"phone\": \"0241-039123\",\n            \"fax\": \"0241-059428\"\n        },\n        {\n            \"id\": \"DUMON\",\n            \"companyName\": \"Du monde entier\",\n            \"contactName\": \"Janine Labrune\",\n            \"title\": \"Owner\",\n            \"address\": \"67, rue des Cinquante Otages, , Nantes/FRANCE\",\n            \"phone\": \"40.67.88.88\",\n            \"fax\": \"40.67.89.89\"\n        },\n        {\n            \"id\": \"EASTC\",\n            \"companyName\": \"Eastern Connection\",\n            \"contactName\": \"Ann Devon\",\n            \"title\": \"Sales Agent\",\n            \"address\": \"35 King George, , London/UK\",\n            \"phone\": \"(171) 555-0297\",\n            \"fax\": \"(171) 555-3373\"\n        }\n    ],\n    \"totalCount\": 72\n}"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:7000/api/customer/get/AAAAA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7000/api/customer/get/AAAAA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"customer",
+						"get",
+						"AAAAA"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:7000/api/customer/get/AAAAA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/customer/get/BLONP",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"customer",
+								"get",
+								"BLONP"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 May 2022 16:30:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"companyName\": \"Blondesddsl père et fils\",\n    \"contactName\": \"Frédérique Citeaux\",\n    \"contactTitle\": \"Marketing Manager\",\n    \"address\": \"24, place Kléber\",\n    \"city\": \"Strasbourg\",\n    \"region\": null,\n    \"postalCode\": \"67000\",\n    \"country\": \"France\",\n    \"phone\": \"88.60.15.31\",\n    \"fax\": \"88.60.15.32\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:7000/api/customer/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerID\": \"DENTI\",\r\n  \"companyName\": \"DENTI COLLECTION\",\r\n  \"contactName\": \"JOHN CAPTION\",\r\n  \"contactTitle\": \"DENEME\",\r\n  \"address\": \"87979 STREEET\",\r\n  \"city\": \"LOS ANGELES\",\r\n  \"region\": \"LA\",\r\n  \"postalCode\": \"78789898\",\r\n  \"country\": \"USA\",\r\n  \"phone\": \"0748456416516\",\r\n  \"fax\": \"0616168160816\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7000/api/customer/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"customer",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:7000/api/customer/add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customerID\": \"TIFKA\",\r\n  \"companyName\": \"TIFKAN CONPANY\",\r\n  \"contactName\": \"ELIZABETH LEWRANCE\",\r\n  \"contactTitle\": \"DENEME\",\r\n  \"address\": \"87979 STREEET\",\r\n  \"city\": \"LOS ANGELES\",\r\n  \"region\": \"LA\",\r\n  \"postalCode\": \"00789898\",\r\n  \"country\": \"USA\",\r\n  \"phone\": \"0748456416516\",\r\n  \"fax\": \"0616168160816\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7000/api/customer/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"customer",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 May 2022 16:33:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "https://localhost:7000/api/customer/delete/AAAAA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7000/api/customer/delete/AAAAA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"customer",
+						"delete",
+						"AAAAA"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:7000/api/customer/delete/AAAAA",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/customer/delete/AAAAA",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"customer",
+								"delete",
+								"AAAAA"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 May 2022 16:25:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "https://localhost:7000/api/customer/update/TIFKA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerID\": \"TIFKA\",\r\n  \"companyName\": \"TIFF FACTORY\",\r\n  \"contactName\": \"Abbie Cadence\",\r\n  \"contactTitle\": \"Sales Manager\",\r\n  \"address\": \"899 Jefferson Way\",\r\n  \"city\": \"Paris\",\r\n  \"region\": \"string\",\r\n  \"postalCode\": \"00789\",\r\n  \"country\": \"France\",\r\n  \"phone\": \"05454545454\",\r\n  \"fax\": \"0849846549846\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7000/api/customer/update/TIFKA",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"customer",
+						"update",
+						"TIFKA"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
